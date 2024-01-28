@@ -3,7 +3,8 @@
 The challenge is to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
 ## Github
-[Github Repo](https://github.com/KrispyKhang/SVG-Logo-Maker)
+[Github Repo](https://github.com/KrispyKhang/Note-Taker)
+[Functional Deployed App Via Heroku](https://notetakerkhang-198ce7b8a3b3.herokuapp.com/)
 
 ## Table of Contents
 - User Story 
@@ -38,13 +39,19 @@ The challenge is to create an application called Note Taker that can be used to 
 - UUID (Universally Unique ID) (npm i uuid) - generates cryptographically secure UUIDS 
 
 ## Walkthrough
-![](./ReadMeAssets/Jan-28-2024%2011-19-53.gif)
+![](./ReadMeAssets/Jan-28-2024%2013-28-21.gif)
 
-- As you view the walkthrough. We opened our terminal and did "npm test" from our jest package where we test to see if our js works.
-- Then ran "nodemon server" where we run the inquirer prompt.
-- The inquirer prompt which we're able to access through the Inquirer package asks us a series of questions on our SVG cosmetic preferences.
-- After answering the series of questions on the prompt, our SVG logo is created.
-- See screenshot below of the finished product.
+- BONUS - Added a DELETE Request where users can delete their logged tasks.
+- Note Taker app - Can add, remove, etc..
+- uses API routes created 
+- Express JS - Server hosted PORT 3001 for a multipage web build
 
-![](./ReadMeAssets/Screenshot%202024-01-28%20at%2011.06.25%20AM.png)
+## Challenges
+# Deployment!
+- Deploying to Heroku was a challenge. 
+- installation process was easy, but finding the error was hard when opening the app from Heroku Repository.
+- The issue was my server.js: the const PORT = 3001 did not work.
+- Changed const Port = 3001 -> const PORT = process.env.PORT || 3001;
+- For some reason, that worked although i dont have an .env file 
+- Created a Procfile (Heroku based) - where server.js will be the first to run.
 
