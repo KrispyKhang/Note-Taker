@@ -13,8 +13,4 @@ app.use(express.static("public"));
 
 app.use(routes);
 
-// app.listen(PORT, () =>
-//   console.log(`App werking at http://localhost:${PORT}`)
-// );
-
-app.listen(PORT || 3001);
+app.listen(PORT, () => console.log(`App werking at http://localhost:${PORT}`));
