@@ -3,8 +3,8 @@
 The challenge is to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
 ## Github
-[Github Repo](https://github.com/KrispyKhang/Note-Taker)
-[Functional Deployed App Via Heroku](https://notetakerkhang-198ce7b8a3b3.herokuapp.com/)
+- [Github Repo](https://github.com/KrispyKhang/Note-Taker)
+- [Functional Deployed App Via Heroku](https://notetakerkhang-198ce7b8a3b3.herokuapp.com/)
 
 ## Table of Contents
 - User Story 
